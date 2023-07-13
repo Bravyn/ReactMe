@@ -13,8 +13,13 @@
 
     <script type="text/jsx">
     const app = document.getElementById('app');
-    const el = <h1> IAN LOVES REACT </h1>
-    ReactDOM.render(el, app);
+    const Header = () => {
+        return <div> <h1> IAN LOVES REACT </h1>
+            <button> Let's Go!</button>
+        </div>
+    }
+
+    ReactDOM.render(<Header/> , app);
 
 </script>
 </body>
