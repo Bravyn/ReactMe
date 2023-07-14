@@ -13,17 +13,18 @@
 
     <script type="text/jsx">
     const app = document.getElementById('app');
-    const Header = () => {
-        return <div> <h1> IAN LOVES REACT </h1>
-            <button> Let's Go!</button>
+    
+    const Header = ({ btntext, title }) => {
+        return <div> <h1>{ title ? title : "WELCOME" }</h1>
+            <button> { btntext ? btntext : "Get Started" } </button>
         </div>
     }
 
     function Homepage(){
         return (
             <div>
-            <Header/>
-            <Header/>
+            <Header btntext = "Learn More" title = "Home"/>
+            <Header title = "Start Learning"/>
             <h2> Content </h2>
             </div>
         )
