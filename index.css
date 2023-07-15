@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    color: rgb(209, 209, 234);
+    background-color: rgb(104, 11, 219);
+}
+h1{
+    color: blue;
+}
+.home{
+    margin: 7rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+p{
+    margin-top: 2rem;
+    color: rgb(58, 86, 49);
+}
+button{
+    padding: .618rem;
+}
+button:hover{
+    background-color: aliceblue;
+    color: #000;
+}
