@@ -3,13 +3,18 @@ body {
     padding: 0;
 }
 
-button{
-    color: rgb(209, 209, 234);
-    background-color: rgb(104, 11, 219);
-}
 h1{
     color: blue;
+    font-family: 'Kanit', sans-serif;
+
 }
+#mainheader{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+    letter-spacing: .618rem;
+
+}
+
 .home{
     margin: 7rem auto;
     display: flex;
@@ -22,10 +27,19 @@ p{
     margin-top: 2rem;
     color: rgb(58, 86, 49);
 }
-button{
-    padding: .618rem;
-}
 button:hover{
+    color: rgb(209, 209, 234);
+    background-color: rgb(104, 11, 219);
+    transform: scale(1.1);
+}
+button{
     background-color: aliceblue;
     color: #000;
+    padding: .618rem;
+
 }
+/*
+font-family: 'Bacasime Antique', serif;
+font-family: 'Belanosima', sans-serif;
+font-family: 'Kanit', sans-serif;
+^/

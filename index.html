@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReactMe</title>
-    <link  href="index.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Belanosima:wght@400;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100;1,200&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div id="app"></div>
     <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
@@ -15,9 +22,9 @@
     <script type="text/jsx">
     const app = document.getElementById('app');
     
-    const Header = ({ btntext, title }) => {
-        return <div> <h1>{ title ? title : "WELCOME" }</h1>
-            <button> { btntext ? btntext : "Get Started" } </button>
+    const Header = ({ htype, btntext, title }) => {
+        return <div> <h1 id = {htype ? htype : "mainheader"}>{ title ? title : "WELCOME" }</h1>
+            <button> { btntext ? btntext : "GET STARTED" } </button>
         </div>
     }
 
@@ -26,7 +33,7 @@
             <div className = "home">
             <Header btntext = "Learn More" title = "Sayansi"/>
             <p>Or jump right in...</p>
-            <Header title = "Start Learning"/>
+            <Header htype = "sub" title = "Start Learning"/>
             </div>
         )
     }
@@ -35,4 +42,5 @@
 
 </script>
 </body>
+
 </html>
