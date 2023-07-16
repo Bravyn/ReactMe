@@ -22,18 +22,18 @@
     <script type="text/jsx">
     const app = document.getElementById('app');
     
-    const Header = ({ htype, btntext, title }) => {
+    const Header = ({btype, htype, btntext, title }) => {
         return <div> <h1 id = {htype ? htype : "mainheader"}>{ title ? title : "WELCOME" }</h1>
-            <button> { btntext ? btntext : "GET STARTED" } </button>
+            <button className = { btype ? btype : "btn" }> { btntext ? btntext : "GET STARTED" } </button>
         </div>
     }
 
     function Homepage(){
         return (
             <div className = "home">
-            <Header btntext = "Learn More" title = "Sayansi"/>
+            <Header  htype = "Learn More" title = "Sayansi"/>
             <p>Or jump right in...</p>
-            <Header htype = "sub" title = "Start Learning"/>
+            <Header btype = "startbtn" btntext = "Learn More" htype = "sub" title = "Start Learning"/>
             </div>
         )
     }

@@ -4,7 +4,7 @@ body {
 }
 
 h1{
-    color: blue;
+    color: rgb(142, 142, 220);
     font-family: 'Kanit', sans-serif;
 
 }
@@ -12,6 +12,11 @@ h1{
     font-family: 'Kanit', sans-serif;
     font-weight: 100;
     letter-spacing: .618rem;
+
+}
+.startbtn{
+    font-family: 'Kanit', sans-serif;
+    border-radius: .4rem;
 
 }
 
